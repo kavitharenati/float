@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        [for="fname"]{
+            color: palevioletred;
+        }
+        [name~="sname"]{
+            color: palevioletred;
+            
+        }
+        [for|="email"]{
+        color: palevioletred;
+        }
+        [for^="pas"]{
+            color: palevioletred;
+        }
+        [for$="ile"]{
+        color: palevioletred;
+        }
+        [for*="res"]{
+        color: palevioletred;
+        }
+        [type="submit"]{
+            background-color: palevioletred;
+            
+        }
+        [type~="Reset"]{
+        background-color: palevioletred;
+        }
+    </style>
+
+</head>
+<body>
+    <form>
+        <center>
+        <pre>
+        <h1>FORM BY USING ATTRIBUTE SELECTORS</h1>
+        <label for="fname" >FIRST NAME:-</label>
+        <input type="text" name="fname" id="text" placeholder="your first name" required>
+        <label name="sname">SECOND NAME:-</label>
+        <input type="text" name="sname" id="text" placeholder="your second name" required> 
+        <label for="email-id">EMAIL:-</label> 
+        <input type="email" id="email" name="email" placeholder="enter your mail id" required>
+        <label for="password">PASSWORD:-</label>
+        <input type="password" id="password" name="password" placeholder="enter ypur password" required>
+        <label for="mobile">MBL NUMBER:-</label>
+        <input type="tel" name="mobile" id="mobile" placeholder="enter your mobile number" required>
+        <label for="address">ADDRESS:-</label>
+        <textarea></textarea>
+        <input type="Reset">
+        
+        <input type="submit">
+        </pre>
+
+    </form>
+</body>
+</html>
